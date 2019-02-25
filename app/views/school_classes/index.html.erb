@@ -1,0 +1,5 @@
+<ul>
+<% @school_classes.each do |sc| %>
+  <li>  <%= link_to sc.title, school_classes_path %> | <%= sc.room_number %> </li>
+<% end %>
+</ul>
