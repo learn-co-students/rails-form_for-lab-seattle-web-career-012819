@@ -53,4 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resources :students, except: [:destroy, :index]
+  resources :school_classes, except: [:destroy, :index]
+  # resources :students, only: [:new, :show, :edit, :create]
+  # resources :school_classes, only: [:new, :show, :edit, :create]
 end
