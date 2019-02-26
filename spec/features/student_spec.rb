@@ -12,9 +12,9 @@ describe 'form page' do
 
     fill_in 'student_first_name', with: "Lindsey"
     fill_in 'student_last_name', with: "Stirling"
-
+    page.save_page
     click_on "Create Student"
-
+    page.save_page
     expect(page).to have_content("Lindsey")
   end
 
